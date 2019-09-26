@@ -9,7 +9,6 @@ const Show = props => {
     return (
         <>
             <h1>{props.show.name}</h1>
-            <time dateTime={`${year}-${month}`}>{`${year} / ${month}`}</time>
             <p>{props.show.summary.replace(/<[/]?p>/g, '')}</p>
             <img alt={`Poster image for ${props.show.name}`} src={props.show.image.medium}/>
         </>
