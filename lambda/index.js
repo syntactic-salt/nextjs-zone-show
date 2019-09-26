@@ -6,8 +6,8 @@ const server = awsServerlessExpress.createServer((req, res) => {
 
     res.setHeader('Cache-Control', 'no-cache');
 
-    if (/\/[0-9]{4}\/[0-9]{2}\/[0-9]+/.test(parsedURL.pathname)) {
-        require('./pages/[year]/[month]/[showID]').render(req, res);
+    if (/\/shows\/[0-9]+/.test(parsedURL.pathname)) {
+        require('./pages/shows/[showID]').render(req, res);
     } else {
         res.statusCode = 404;
         res.end();
