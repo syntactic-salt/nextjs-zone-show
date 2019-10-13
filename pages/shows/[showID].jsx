@@ -31,7 +31,7 @@ Show.getInitialProps = async function(context) {
     const [showRes, seasonsRes] = await Promise.all(
         [
             fetch(`https://api.tvmaze.com/shows/${showID}`),
-            fetch(`http://api.tvmaze.com/shows/${showID}/seasons`),
+            fetch(`https://api.tvmaze.com/shows/${showID}/seasons`),
         ],
     );
 

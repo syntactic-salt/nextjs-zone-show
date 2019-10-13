@@ -31,7 +31,7 @@ Season.getInitialProps = async function(context) {
         [
             fetch(`https://api.tvmaze.com/shows/${showID}`),
             fetch(`https://api.tvmaze.com/seasons/${seasonID}`),
-            fetch(`http://api.tvmaze.com/episodes/${episodeID}`),
+            fetch(`https://api.tvmaze.com/episodes/${episodeID}`),
         ],
     );
 
